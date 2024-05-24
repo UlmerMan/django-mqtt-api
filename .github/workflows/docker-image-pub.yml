@@ -1,7 +1,9 @@
-name: ci
+name: dockerhub cd
 
 on:
-  deployment
+  release:
+    types: [created]
+    
 
 jobs:
   docker:
